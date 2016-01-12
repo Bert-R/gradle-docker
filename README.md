@@ -82,6 +82,7 @@ The plugin exposes configuration options on 2 levels: globally through a plugin 
 Configuration properties in the plugin extension `docker` are applied to all Docker tasks. Available properties are:
 
  - `dockerBinary` - The path to the docker binary.
+ - `options` - Options to be passed to the `docker` binary (ignored when `useApi` is true)
  - `baseImage` - The base docker image used when building images (i.e. the name after `FROM` in the Dockerfile).
  - `maintainer` - The name and email address of the image maintainer.
  - `registry` - The hostname and port of the Docker image registry unless the Docker Hub Registry is used.

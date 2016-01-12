@@ -72,6 +72,7 @@ class DockerPlugin implements Plugin<Project> {
         extension.with {
             maintainer = ''
             dockerBinary = DOCKER_BINARY
+            options = ''
             registry = ''
             useApi = Boolean.FALSE
             hostUrl = ''
@@ -95,6 +96,7 @@ class DockerPlugin implements Plugin<Project> {
         //        see http://forums.gradle.org/gradle/topics/how_do_you_use_a_conventionmapping_to_do_the_following
         task.conventionMapping.with {
             dockerBinary = { extension.dockerBinary }
+            options = { extension.options }
             maintainer = { extension.maintainer }
             registry = { extension.registry }
             useApi = { extension.useApi }

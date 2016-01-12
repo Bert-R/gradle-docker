@@ -23,6 +23,9 @@ class DockerPluginExtension {
     // path to the docker binary
     String dockerBinary
 
+    // Options to be passed to the docker binary
+    String options
+
     // use docker REST api (with docker-java)
     Boolean useApi
 

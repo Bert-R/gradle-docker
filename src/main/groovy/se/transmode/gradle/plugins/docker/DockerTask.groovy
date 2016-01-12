@@ -34,6 +34,8 @@ class DockerTask extends DefaultTask {
 
     // full path to the docker executable
     String dockerBinary
+    // Options to be passed to the docker binary (ignored when useApi is true)
+    String options
     // Name and Email of the image maintainer
     String maintainer
     // Name of the application being wrapped into a docker image (default: project.name)
